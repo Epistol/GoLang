@@ -15,7 +15,9 @@ func ConcatByAddr(integers *[]int){
 	*integers = append(*integers,1)
 }
 
-
+func ConcatbyVal(integers []int) []int{
+	return append(integers,1)
+}
 
 func main() {
 
@@ -23,7 +25,8 @@ func main() {
 	Concat(slice0)
 	ConcatByAddr(&slice0)
 	fmt.Println("After : ", slice0)
-
+	slice0 = ConcatbyVal(slice0)
+	fmt.Println("After : ", slice0)
 }
 
 // ____________________________________________________________________________
