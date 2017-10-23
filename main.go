@@ -11,10 +11,17 @@ func Concat(integers []int){
 	fmt.Println("In concact : ", integers)
 }
 
+func ConcatByAddr(integers *[]int){
+	*integers = append(*integers,1)
+}
+
+
+
 func main() {
 
 	slice0 := []int{-1,0}
 	Concat(slice0)
+	ConcatByAddr(&slice0)
 	fmt.Println("After : ", slice0)
 
 }
