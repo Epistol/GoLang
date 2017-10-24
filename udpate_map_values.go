@@ -3,23 +3,21 @@ package main
 import (
 	"fmt"
 )
-
+type VideoServer struct {
+	NumVideos int
+}
 func main() {
 
-	type Cluster struct {
-		NumVideos int
+
+
+	serverMars := VideoServer{
+		100,
 	}
 
-	// If you want to easily modify a map item, store pointers to values instead
-	// of just values
+	serverRepo := make(map[string]VideoServer)
+	serverRepo["mars"] = serverMars
 
-	Clusters := map[string]*Cluster{
-		"pluto": &Cluster{},
-	}
-
-	Clusters["pluto"].NumVideos++
-
-	fmt.Println("Clusters:", Clusters["pluto"])
+	fmt.Println( serverRepo["mars"])
 }
 
 // ____________________________________________________________________________
