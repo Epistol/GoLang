@@ -1,0 +1,3 @@
+siv.go => définir un type struct CarInfo avec membres puis créer func GetCarInfo(string) string
+
+infocar.go => importer siv et utiliser GetCarInfo
