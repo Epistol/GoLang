@@ -17,13 +17,5 @@ func main() {
 
 	words[3] = words[3][:1]
 	sentence = strings.Join(words, " ")
-	fmt.Println( sentence )
+	fmt.Println(mission )
 }
-
-// ____________________________________________________________________________
-// Training content part of "Go introductory level"
-// Copyright Fred Ménez, March 2017, fred.menez@scalera.io
-
-// Permission granted to reproduce for personal and educational use only.
-// Commercial copying, hiring, lending is prohibited.
-// ____________________________________________________________________________
